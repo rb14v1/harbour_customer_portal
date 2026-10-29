@@ -1,0 +1,22 @@
+{
+  "name": "customer-portal",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "db": "npm run db -w backend",
+    "dev": "concurrently -n api,web -c blue,green \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w frontend",
+    "test": "npm test -w backend && npm test -w frontend",
+    "migrate:up": "npm run migrate:up -w backend",
+    "migrate:down": "npm run migrate:down -w backend",
+    "migrate:status": "npm run migrate:status -w backend",
+    "seed": "npm run seed -w backend",
+    "seed:reset": "npm run seed:reset -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

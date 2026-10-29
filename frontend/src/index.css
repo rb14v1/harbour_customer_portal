@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose-kb h2 {
+  @apply mt-6 mb-2 text-lg font-semibold;
+}
+.prose-kb p {
+  @apply mb-3 leading-relaxed;
+}
+.prose-kb ol {
+  @apply mb-3 list-decimal pl-6;
+}
+.prose-kb ul {
+  @apply mb-3 list-disc pl-6;
+}
+.prose-kb a {
+  @apply text-primary underline;
+}

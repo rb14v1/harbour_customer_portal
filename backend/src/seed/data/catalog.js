@@ -1,0 +1,90 @@
+const products = [
+  ['NET-SW24', '24-Port Managed Switch', 389],
+  ['NET-AP6', 'Wi-Fi 6 Access Point', 179],
+  ['NET-RT1', 'Business Router', 249],
+  ['CBL-C6-50', 'Cat6 Cable 50ft (10-pack)', 59],
+  ['SRV-R1U', '1U Rack Server', 2499],
+  ['STR-NAS4', '4-Bay NAS', 649],
+  ['STR-SSD1', '1TB Enterprise SSD', 139],
+  ['LAP-PRO14', 'ProBook 14 Laptop', 1199],
+  ['MON-27Q', '27" QHD Monitor', 299],
+  ['DCK-USBC', 'USB-C Docking Station', 189],
+  ['KBD-WL', 'Wireless Keyboard & Mouse', 69],
+  ['UPS-1500', 'UPS 1500VA', 329],
+  ['LIC-OFF-Y', 'Office Suite License (1 yr)', 99],
+  ['LIC-AV-Y', 'Endpoint Security License (1 yr)', 45],
+  ['SVC-INST', 'On-site Installation (hour)', 120],
+  ['SVC-SUP-M', 'Premium Support (month)', 250],
+];
+
+const ticketTopics = {
+  billing: [
+    'Invoice amount does not match quote',
+    'Need a copy of last month invoice',
+    'Question about tax on invoice',
+    'Payment made but invoice still unpaid',
+    'Change billing contact email',
+  ],
+  orders: [
+    'Order has not arrived yet',
+    'Received wrong item in shipment',
+    'Damaged item on delivery',
+    'Need to change delivery address',
+    'Request to cancel order',
+    'Missing items from order',
+  ],
+  account: [
+    'Add a new user to our account',
+    'Cannot reset my password',
+    'Update company address',
+    'Remove former employee access',
+  ],
+  technical: [
+    'Switch keeps rebooting',
+    'Access point not broadcasting SSID',
+    'Laptop battery drains quickly',
+    'NAS not visible on network',
+    'License key not activating',
+    'Docking station display flickers',
+  ],
+  other: ['Request for product recommendation', 'Feedback on support experience', 'Bulk pricing inquiry'],
+};
+
+const kbCategories = [
+  { name: 'Getting Started', slug: 'getting-started', description: 'Set up your account and find your way around the portal.' },
+  { name: 'Orders & Shipping', slug: 'orders-shipping', description: 'Tracking, delivery, returns and order changes.' },
+  { name: 'Billing & Invoices', slug: 'billing-invoices', description: 'Invoices, payment terms and billing contacts.' },
+  { name: 'Account & Security', slug: 'account-security', description: 'Users, passwords and access management.' },
+  { name: 'Networking', slug: 'networking', description: 'Switches, routers and wireless troubleshooting.' },
+  { name: 'Hardware & Software', slug: 'hardware-software', description: 'Laptops, storage, licenses and peripherals.' },
+];
+
+const kbArticles = [
+  ['getting-started', 'How to sign in to the customer portal'],
+  ['getting-started', 'Navigating your dashboard'],
+  ['getting-started', 'How to open a support ticket'],
+  ['getting-started', 'Understanding ticket statuses'],
+  ['orders-shipping', 'How to track your order'],
+  ['orders-shipping', 'What to do if an item arrives damaged'],
+  ['orders-shipping', 'How to request a return or exchange'],
+  ['orders-shipping', 'Changing a delivery address after ordering'],
+  ['orders-shipping', 'Typical delivery times by region'],
+  ['billing-invoices', 'How to download an invoice PDF'],
+  ['billing-invoices', 'Understanding invoice statuses'],
+  ['billing-invoices', 'Our payment terms explained'],
+  ['billing-invoices', 'Updating your billing contact'],
+  ['account-security', 'Resetting your password'],
+  ['account-security', 'Adding or removing users on your account'],
+  ['account-security', 'Keeping your account secure'],
+  ['networking', 'Resetting a managed switch to factory defaults'],
+  ['networking', 'Access point not broadcasting a network name'],
+  ['networking', 'Configuring a VLAN on the 24-port switch'],
+  ['networking', 'Diagnosing slow Wi-Fi'],
+  ['hardware-software', 'Activating your software license key'],
+  ['hardware-software', 'Extending laptop battery life'],
+  ['hardware-software', 'Making your NAS visible on the network'],
+  ['hardware-software', 'Fixing docking station display flicker'],
+  ['hardware-software', 'Updating SSD firmware safely'],
+];
+
+module.exports = { products, ticketTopics, kbCategories, kbArticles };
